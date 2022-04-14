@@ -19,5 +19,5 @@ The following **required** functionality is completed:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/EvansAsuboahStetson/AndroidScholarshipApp/blob/master/AppAnimation.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 

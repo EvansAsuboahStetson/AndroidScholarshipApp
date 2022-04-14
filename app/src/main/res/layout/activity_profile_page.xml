@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilePage"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_weight=".5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#E9FDFF">
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/profile"
+                app:civ_border_color="#ffffff"
+                app:civ_border_width="1dp" />
+
+            <TextView
+                android:id="@+id/name_of_user"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="36dp"
+                android:layout_toRightOf="@+id/profile_image"
+                android:text="Evans Asuboah"
+                android:textSize="32sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/name_of_user"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@id/profile_image"
+                android:textSize="20sp"
+                android:text="Class of 2024"
+                />
+
+            <RelativeLayout
+                android:id="@+id/box_id"
+                android:layout_below="@+id/profile_image"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rectangle"/>
+
+            <TextView
+                android:id="@+id/profile_progress"
+                android:layout_width="200dp"
+                android:layout_marginLeft="16dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/box_id"
+                android:text="PROFILE PROGRESS"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/finish_btn_id"
+                android:layout_toRightOf="@id/profile_progress"
+                android:layout_below="@id/box_id"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="18dp"
+                android:text="Finish Profile"
+                android:layout_marginRight="16dp"
+                android:textSize="20sp"
+                android:textColor="#FFA500"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:background="@drawable/rect"/>
+            <TextView
+                android:id="@+id/percentage_id"
+                android:layout_width="200dp"
+                android:layout_marginLeft="16dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/profile_progress"
+                android:text="1% complete"
+                android:textSize="20sp"/>
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:background="#EDF2F3">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="1dp"
+
+                    android:layout_marginBottom="1dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="8dp"
+                    app:cardMaxElevation="8dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true">
+
+                    <TextView
+                        android:id="@+id/overview_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text="MY OVERVIEW"
+                        android:textSize="30sp" />
+
+                    <View
+                        android:id="@+id/over_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@+id/overview_id"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="60dp"
+                        android:layout_marginRight="16dp"
+                        android:background="#add8e6" />
+
+                    <TextView
+                        android:id="@+id/mypersonal_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/over_bar"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="72dp"
+                        android:layout_marginRight="16dp"
+                        android:text="My Personal Information"
+                        android:textColor="#FFA500"
+                        android:textSize="20sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@+id/mypersonal_info"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="109dp"
+                        android:layout_marginRight="16dp"
+                        android:background="#add8e6" />
+
+                    <TextView
+                        android:id="@+id/myResume"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/mypersonal_info"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="122dp"
+                        android:layout_marginRight="16dp"
+                        android:text="My Resume"
+                        android:textColor="#FFA500"
+                        android:textSize="20sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@+id/myResume"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="158dp"
+                        android:layout_marginRight="16dp"
+                        android:background="#add8e6" />
+
+                    <TextView
+                        android:id="@+id/myFavScholar"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="172dp"
+                        android:layout_marginRight="16dp"
+                        android:text="My Favorite Scholarships"
+                        android:textColor="#FFA500"
+                        android:textSize="20sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@+id/myFav"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="208dp"
+                        android:layout_marginRight="16dp"
+                        android:background="#add8e6" />
+
+                    <TextView
+                        android:id="@+id/myEssays"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="222dp"
+                        android:layout_marginRight="16dp"
+                        android:text="My Saved Essays"
+                        android:textColor="#FFA500"
+                        android:textSize="20sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@+id/myFavScholar"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="260dp"
+                        android:layout_marginRight="16dp"
+                        android:background="#add8e6" />
+
+                    <TextView
+                        android:id="@+id/myfavColleges"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="272dp"
+                        android:layout_marginRight="16dp"
+                        android:text="My Favorite Colleges "
+                        android:textColor="#FFA500"
+                        android:textSize="20sp" />
+                </androidx.cardview.widget.CardView>
+
+
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#EDF2F3">
+            <TextView
+                android:id="@+id/finish_profile"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="16dp"
+                android:textSize="15sp"
+                android:text="@string/large_text"
+
+                />
+
+            <TextView
+                android:id="@+id/back_id"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/finish_profile"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="36dp"
+                android:background="@drawable/rect"
+                android:gravity="center"
+                android:text="Back"
+                android:textAlignment="center"
+                android:textColor="#FFA500"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

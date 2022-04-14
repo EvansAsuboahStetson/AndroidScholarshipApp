@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">ScholalrHope</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="title_activity_profilepagee">profilepagee</string>
+    <string name="profile">card max elevation will give the cardview maximum elevation
+    card prevent corner overlap will add padding to CardView on"</string>
+    <string name="large_text">"Fill out the rest of your profile and we'll be able to match you to schools and scholarships to help you discover the scholl of your dreams"
+    </string>
+    <string name="action_settings">Settings</string>
+    <string-array name="levels">
+        <item>High School</item>
+        <item>College</item>
+        <item>Community College</item>
+        <item>Vocational School</item>
+    </string-array>
+
+</resources>
+
+
+    <!--to toggle the open close button
+    of the navigation drawer-->
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".customise_popup"
+    android:layout_marginRight="16dp"
+    android:layout_marginLeft="16dp"
+    >
+    <TextView
+        android:id="@+id/ic_eye"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View"
+        android:padding="15dp"
+        android:drawablePadding="10dp"
+        android:textSize="20dp"
+        android:drawableLeft="@drawable/ic_iconmonstr_eye_6"/>
+    <TextView
+        android:id="@+id/change_photo"
+        android:layout_below="@+id/ic_eye"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Photo"
+        android:drawablePadding="10dp"
+        android:textSize="20dp"
+        android:padding="15dp"
+        android:drawableLeft="@drawable/ic_iconmonstr_photo_camera_4"
+        />
+
+    <TextView
+        android:layout_below="@+id/change_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_iconmonstr_trash_can_2"
+        android:drawablePadding="10dp"
+        android:padding="15dp"
+        android:textSize="20dp"
+        android:text="Delete Photo" />
+
+</RelativeLayout>
